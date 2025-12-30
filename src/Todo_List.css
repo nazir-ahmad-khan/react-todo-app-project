@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body-container{
+    background-color: #3362cd;
+    padding: 20px 300px;
+    height: 100vh;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3362cd;
+    margin-top: 10px;
+    padding: 25px 20px 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    }
+
+.title h1{
+    font-size: 35px;
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(149, 147, 147, 0.1);
+}
+
+.input-container {
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    padding-right: 6px;
+}
+
+.input-container input {
+    width: 80%;
+    height: 60px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #3362cd;
+}
+.input-container input:focus{
+    outline: none;
+}
+
+.input-container button {
+    width: 18%;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background-color: #3362cd;
+    border: 2px solid #3362cd;
+}
+.input-container button:hover{
+    background-color: #274ea8;;
+    border-color: #274ea8;
+    color: white;
+    transform: scale(1.04);
+}
+
+.list-container{
+    width: 95%;
+    margin: auto;
+    max-height: 480px;
+    overflow-y: auto;
+    margin-top: 15px;
+    padding-right: 14px;
+    scroll-behavior: smooth;    
+}
+.list-container::-webkit-scrollbar{
+    width: 6px;
+}
+.list-container::-webkit-scrollbar-thumb{
+    background-color: #3362cd;
+    border-radius: 10px;
+}
+.list-container::-webkit-scrollbar-track{
+    background-color: #e6e6e6;
+}
+
+.list-container ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.list-container ul li{
+    color: rgb(27, 26, 26);
+    padding: 18px 14px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 12px;
+    position: relative;
+    background-color: #c6e1e5;
+    border-radius: 10px;
+}
+.btn-icon {
+    font-size: 20px;
+    background-color: #1d1aa3;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    right: 20px;
+    top: 18%;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.btn-icon:hover{
+    background-color: #14107d;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-container{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding: 2px 36px 0 0 ;
+}
+.clear-btn {
+    background-color: #e53935;   /* red = danger */
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #c62828;
+    transform: scale(1.4s);
+}
+
+.clear-btn:active {
+    transform: scale(0.95);
+}
