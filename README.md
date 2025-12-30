@@ -1,12 +1,17 @@
-# React + Vite
+This Todo List application is built using React and demonstrates practical usage of modern React hooks such as **useState** and **useRef**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The app allows users to:
 
-Currently, two official plugins are available:
+- Add new todos using a button or the Enter key
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Edit existing todos with instant input focus
 
-## Expanding the ESLint configuration
+- Delete individual todos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Clear all todos with a confirmation dialog
+
+- Automatically focus the input field after actions
+
+- Automatically scroll to the latest todo when new items are added
+
+The project focuses on clean UI behavior, smooth user experience, and real-world React patterns such as controlled inputs, conditional rendering, and DOM manipulation using refs.- 
